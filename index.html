@@ -230,7 +230,7 @@ layout: nil
 		<!-- Thumbnails -->
 		<div class="row margin equal">
 			{% for post in site.posts %}
-				{% if post.title == site.posts.first.title %}
+				{% if post.title != site.posts.first.title %}
 				<div class="four columns medium-six columns small-twelve columns fade-it">
 					<div class="portfolio-thumb">
 						<a href="{{ site.baseurl }}{{ post.url }}">
