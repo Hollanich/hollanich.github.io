@@ -164,6 +164,7 @@ layout: nil
 					<div style="background-image: url('{{ site.posts.first.slide2-image }}')" class="header">
 						<div class="header-center">
 							<div class="centerdiv text-white">
+								{% if page.slide2-text %}<h4 class="bigtext uppercase letterspace bold">{{ site.posts.first.slide2-text }}</h4>{% endif %}
 							</div>
 						</div>
 					</div>
@@ -174,6 +175,7 @@ layout: nil
 					<div style="background-image: url('{{ site.posts.first.slide3-image }}')" class="header">
 						<div class="header-center">
 							<div class="centerdiv text-white">
+								{% if page.slide3-text %}<h4 class="bigtext uppercase letterspace bold">{{ site.posts.first.slide3-text }}</h4>{% endif %}
 							</div>
 						</div>
 					</div>
@@ -227,16 +229,18 @@ layout: nil
 		
 		<!-- Thumbnails -->
 		<div class="row margin equal">
-			{% for post in site.posts reversed %}
-			<div class="four columns medium-six columns small-twelve columns fade-it">
-				<div class="portfolio-thumb">
-					<a href="{{ site.baseurl }}{{ post.url }}">
-						<img src="{{ post.product-image }}" alt="placeholder-thumbnail">
-						<i class="fa fa-plus-square-o"></i>
-						<b>{{ post.title }}</b>
-					</a>
+			{% for post in site.posts %}
+				{% if post.title == site.posts.first.title %}
+				<div class="four columns medium-six columns small-twelve columns fade-it">
+					<div class="portfolio-thumb">
+						<a href="{{ site.baseurl }}{{ post.url }}">
+							<img src="{{ post.product-image }}" alt="placeholder-thumbnail">
+							<i class="fa fa-plus-square-o"></i>
+							<b>{{ post.title }}</b>
+						</a>
+					</div>
 				</div>
-			</div>
+				{% endif %}
 			{% endfor %}
 		</div>
 	</section>
