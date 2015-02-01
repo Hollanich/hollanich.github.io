@@ -7,7 +7,7 @@
 <!--[if !IE]><html lang="en"><![endif]-->
 <head>
 	<meta charset="utf-8">
-	<script src="js/lib/modernizr.js"></script>
+	<script src="{{ site.baseurl }}/js/lib/modernizr.js"></script>
 	
 	<!-- The title of your site -->
 	<title>Nick Holland</title>
@@ -21,19 +21,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	
 	<!-- Essential stylesheets -->
-	<link rel="stylesheet" href="css/loader.css">
-	<link rel="stylesheet" href="css/lib/essentials.css">
-	<link rel="stylesheet" href="css/lib/YTPlayer.css">
-	<link rel="stylesheet" href="css/lib/font-awesome.min.css">
-	<link rel="stylesheet" href="css/lib/magnific-popup.css">
-	<link rel="stylesheet" href="css/lib/jquery.bxslider.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/loader.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/lib/essentials.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/lib/YTPlayer.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/lib/font-awesome.min.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/lib/magnific-popup.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/lib/jquery.bxslider.css">
 	
 	<!-- Main stylesheet -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/colors/green.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/colors/green.css">
 	
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="shortcut icon" href="{{ site.baseurl }}/images/favicon.png">
 	
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -57,13 +57,13 @@
 			<!-- Home menu -->
 			<ul class="home-menu">
 				<li>
-					<a href="#work" class="smoothscroll">
+					<a href="{{ site.baseurl }}/#work" class="smoothscroll">
 						<i class="fa fa-asterisk"></i>
 						<b>Products</b>
 					</a>
 				</li>
 				<li>
-					<a href="#about" class="smoothscroll">
+					<a href="{{ site.baseurl }}/#about" class="smoothscroll">
 						<i class="fa fa-user"></i>
 						<b>About</b>
 					</a>
@@ -92,13 +92,13 @@
 	</div>
 
 	<!-- Background image to display when the video doesn't play anymore -->
-	<div style="background-image: url('images/Cover-Photo.jpg');" class="fullscreen-img"></div>
+	<div style="background-image: url('{{ site.baseurl }}/images/Cover-Photo.jpg');" class="fullscreen-img"></div>
 
 	<!-- Menu -->
 	<div class="main-menu fixedmenu">
 		<div class="menu-wrap">
 			<!-- Your symbolic or typographic logo -->
-			<h1><a href="#home" class="smoothscroll">Nick Holland</a></h1>
+			<h1><a href="{{ site.baseurl }}/#home" class="smoothscroll">Nick Holland</a></h1>
 
 			<!-- The menu toggle -->
 			<input type="checkbox" id="toggle" />
@@ -106,9 +106,9 @@
 
 			<!-- The menu items -->
 			<ul class="menu">
-				<li><a href="#home" class="smoothscroll">Home</a></li>
-				<li><a href="#work" class="smoothscroll">Products</a></li>
-				<li><a href="#about" class="smoothscroll">About</a></li>
+				<li><a href="{{ site.baseurl }}/#home" class="smoothscroll">Home</a></li>
+				<li><a href="{{ site.baseurl }}/#work" class="smoothscroll">Products</a></li>
+				<li><a href="{{ site.baseurl }}/#about" class="smoothscroll">About</a></li>
 				<!-- <li><a href="#contact" class="smoothscroll">Contact</a></li> -->
 			</ul>
 		</div>
@@ -126,7 +126,7 @@
 
 				<!-- Text and a button -->
 				<p class="big thin">"I believe design is more than just the shell of an object, more than just manipulation of aesthetics. It's deeper than that. Design is the power to change someone's mood in an instant, inform people without ever talking them, and build things nobody has ever seen before. What I do, as a designer, is take this more-than-meets-the-eye mentality and apply it to industrial products. I strive to bring logic, efficiency, and clean, readable forms to all of my designs." - Nick Holland</p>
-				<p><a href="#work" class="button outline smoothscroll">View my work</a></p>
+				<p><a href="{{ site.baseurl }}/#work" class="button outline smoothscroll">View my work</a></p>
 			</div>
 		</div>
 	</section>
@@ -146,7 +146,7 @@
 			<ul class="bxslider" id="featured-work-slider">
 				<!-- Slide 1 -->
 				<li>
-					<div style="background-image: url('images/Slider-1.jpg')" class="header">
+					<div style="background-image: url('{{ site.baseurl }}/images/Slider-1.jpg')" class="header">
 						<div class="header-center">
 							<div class="centerdiv text-white">
 								<h4 class="bigtext uppercase letterspace bold">Pure Nylon Artbrush</h4>
@@ -157,7 +157,7 @@
 
 				<!-- Slide 2 -->
 				<li>
-					<div style="background-image: url('images/Slider-2.jpg')" class="header">
+					<div style="background-image: url('{{ site.baseurl }}/images/Slider-2.jpg')" class="header">
 						<div class="header-center">
 							<div class="centerdiv text-white">
 							</div>
@@ -167,7 +167,7 @@
 
 				<!-- Slide 3 -->
 				<li>
-					<div style="background-image: url('images/Slider-3.jpg')" class="header">
+					<div style="background-image: url('{{ site.baseurl }}/images/Slider-3.jpg')" class="header">
 						<div class="header-center">
 							<div class="centerdiv text-white">
 							</div>
@@ -363,25 +363,25 @@
 	</section>
 
 	<!-- Javascript -->
-	<script src="js/lib/jquery.min.js"></script>
-	<script src="js/lib/jquery.fittext.js"></script>
-	<script src="js/lib/jquery.magnific-popup.min.js"></script>
-	<script src="js/lib/jquery.bxslider.min.js"></script>
-	<script src="js/lib/jquery.sticky.js"></script>
-	<script src="js/lib/jquery.equal.js"></script>
+	<script src="{{ site.baseurl }}/js/lib/jquery.min.js"></script>
+	<script src="{{ site.baseurl }}/js/lib/jquery.fittext.js"></script>
+	<script src="{{ site.baseurl }}/js/lib/jquery.magnific-popup.min.js"></script>
+	<script src="{{ site.baseurl }}/js/lib/jquery.bxslider.min.js"></script>
+	<script src="{{ site.baseurl }}/js/lib/jquery.sticky.js"></script>
+	<script src="{{ site.baseurl }}/js/lib/jquery.equal.js"></script>
 	
 	<!-- Basic functions -->
-	<script src="js/main.js"></script>
+	<script src="{{ site.baseurl }}/js/main.js"></script>
 	
 	<!-- Specific functions for this page -->
-	<script src="js/lib/jquery.mb.YTPlayer.js"></script>
-	<script src="js/index.js"></script>
+	<script src="{{ site.baseurl }}/js/lib/jquery.mb.YTPlayer.js"></script>
+	<script src="{{ site.baseurl }}/js/index.js"></script>
 	
 	<!-- Scripts for the skills slider -->
-	<script src="js/lib/jquery.touchswipe.min.js"></script>
-	<script src="js/lib/jquery.caroufredsel.min.js"></script>
+	<script src="{{ site.baseurl }}/js/lib/jquery.touchswipe.min.js"></script>
+	<script src="{{ site.baseurl }}/js/lib/jquery.caroufredsel.min.js"></script>
 	
-	<!-- <script src="js/skills-slider.js"></script> -->
+	<!-- <script src="{{ site.baseurl }}/js/skills-slider.js"></script> -->
 
 	<!-- Preloader -->
 	<script type="text/javascript">
