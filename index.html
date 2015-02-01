@@ -1,3 +1,7 @@
+---
+layout: nil
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <!--[if IE 7]><html lang="en" class="ie7"><![endif]-->
@@ -146,10 +150,10 @@
 			<ul class="bxslider" id="featured-work-slider">
 				<!-- Slide 1 -->
 				<li>
-					<div style="background-image: url('/images/Slider-1.jpg')" class="header">
+					<div style="background-image: url('{{ site.posts.first.slide1-image }}')" class="header">
 						<div class="header-center">
 							<div class="centerdiv text-white">
-								<h4 class="bigtext uppercase letterspace bold">Pure Nylon Artbrush</h4>
+								{% if page.slide1-text %}<h4 class="bigtext uppercase letterspace bold">{{ site.posts.first.slide1-text }}</h4>{% endif %}
 							</div>
 						</div>
 					</div>
@@ -157,7 +161,7 @@
 
 				<!-- Slide 2 -->
 				<li>
-					<div style="background-image: url('/images/Slider-2.jpg')" class="header">
+					<div style="background-image: url('{{ site.posts.first.slide2-image }}')" class="header">
 						<div class="header-center">
 							<div class="centerdiv text-white">
 							</div>
@@ -167,7 +171,7 @@
 
 				<!-- Slide 3 -->
 				<li>
-					<div style="background-image: url('/images/Slider-3.jpg')" class="header">
+					<div style="background-image: url('{{ site.posts.first.slide3-image }}')" class="header">
 						<div class="header-center">
 							<div class="centerdiv text-white">
 							</div>
