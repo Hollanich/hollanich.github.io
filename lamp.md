@@ -1,6 +1,11 @@
 ---
 layout: default
 title: Polypropylene Lamp
+product-image:
+image1: images/Lamp.jpg
+image2: images/Lamp-4.jpg
+image3: images/Lamp-5.jpg
+image4: images/Lamp-6.jpg
 slide1-image: images/Lamp-1.jpg
 slide2-image: images/Lamp-2.jpg
 slide3-image: images/Lamp-3.jpg
@@ -13,4 +18,5 @@ idea: To use the cord as a structural element, connecting the entire system. Use
 solution: Hang the lightbulb in the polypropylene and wrap it around a T-shaped top on the shade in order to hold everything together. Use red, fabric cord to display the connection point.
 ---
 
-Some additional text
+## Notes
+This project was really fun!
