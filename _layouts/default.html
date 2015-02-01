@@ -10,11 +10,12 @@
 	<script src="js/lib/modernizr.js"></script>
 	
 	<!-- The title of your site -->
-	<title>Polypropylene Lamp</title>
+	<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 	
 	<!-- Always make sure to check the robots tag -->
 	<meta name="robots" content="index, nofollow">
-	<meta name="description" content="Portfolio of Industrial Designer, Nick Holland">
+	<meta name="author" content="{{ site.name }}" />
+	<meta name="description" content="{{ site.description }}">
 	<meta name="keywords" content="Nick Holland, Industrial Design, Portfolio">
 	
 	<!-- Essential viewport settings -->
@@ -34,14 +35,11 @@
 	<link rel="shortcut icon" href="images/favicon.png">
 	
 	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
 
-
 <body>
-
-
 	<!-- Back to top -->
 	<div id="top"></div>
 
@@ -49,15 +47,12 @@
 	<div class="main-menu alreadyfixed">
 		<div class="menu-wrap">
 
-
 			<!-- Your symbolic or typographic logo -->
 			<h1><a href="index.html#home">Nick Holland</a></h1>
-
 
 			<!-- The menu toggle -->
 			<input type="checkbox" id="toggle" />
 			<label for="toggle" class="toggle"></label>
-
 
 			<!-- The menu items -->
 			<ul class="menu">
@@ -66,108 +61,90 @@
 				<li><a href="index.html#about">About</a></li>
 				<li><a href="index.html#contact">Contact</a></li>
 			</ul>
-
-
 		</div>
 	</div>
 
-
-
-
 	<!-- Project details-->
 	<section class="project-page-intro">
-
 
 		<!-- Project page slider -->
 		<div class="project-page-slider">
 			<ul class="bxslider" id="featured-work-slider">
 
-
 				<!-- Slide 1 -->
 				<li>
-					<div style="background-image: url('images/Lamp-1.jpg')" class="header">
+					<div style="background-image: url('{{ page.slide1-image }}')" class="header">
 						<div class="header-center">
 							<div class="centerdiv text-white">
-								<h4 class="bigtext uppercase letterspace bold">Polypropylene Lamp</h4>
+								{% if page.slide1-text %}<h4 class="bigtext uppercase letterspace bold">{{ page.slide1-text }}</h4>{% endif %}
 							</div>
 						</div>
 					</div>
 				</li>
-
 
 				<!-- Slide 2 -->
 				<li>
-					<div style="background-image: url('images/Lamp-2.jpg')" class="header">
+					<div style="background-image: url('{{ page.slide2-image }}')" class="header">
 						<div class="header-center">
 							<div class="centerdiv text-white">
+								{% if page.slide2-text %}<h4 class="bigtext uppercase letterspace bold">{{ page.slide2-text }}</h4>{% endif %}
 							</div>
 						</div>
 					</div>
 				</li>
-
 
 				<!-- Slide 3 -->
 				<li>
-					<div style="background-image: url('images/Lamp-3.jpg')" class="header">
+					<div style="background-image: url('{{ page.slide3-image }}')" class="header">
 						<div class="header-center">
 							<div class="centerdiv text-white">
+								{% if page.slide3-text %}<h4 class="bigtext uppercase letterspace bold">{{ page.slide3-text }}</h4>{% endif %}
 							</div>
 						</div>
 					</div>
 				</li>
-
-
 			</ul>
 		</div>
-
 
 		<!-- Intro text -->
 		<div class="row">
 			<div class="ten columns center">
-				<h2 class="text-color">Details about the Polypropylene Lamp</h2>
-				<p class="big thin">Designed with shadow, light quality and manufacturing feasibility in mind, this lighting unit allows for flatpacking and simple, non-obtrusive hanging.</p>
+				<h2 class="text-color">Details about the {{ page.title }}</h2>
+				<p class="big thin">{{ page.intro }}</p>
 			</div>
 		</div>
 
-
 		<!-- 3 Columns -->
 		<div class="row">
-
 
 			<!-- Column 1 -->
 			<div class="four columns">
 				<p><i class="fa fa-circle-o icon huge"></i></p>
 				<h4>The Brief</h4>
-				<p align="justify">Design a lighting unit using only one sheet of polypropylene plastic, cord, socket and lightbulb. All wiring needed to be done by hand.</p>
+				<p align="justify">{{ page.brief }}</p>
 			</div>
-
 
 			<!-- Column 2 -->
 			<div class="four columns">
 				<p><i class="fa fa-adjust icon huge"></i></p>
 				<h4>The Idea</h4>
-				<p align="justify">To use the cord as a structural element, connecting the entire system. Use the body of the shade mixed with offcuts from the plastic sheeting as packaging.</p>
+				<p align="justify">{{ page.idea }}</p>
 			</div>
-
 
 			<!-- Column 3 -->
 			<div class="four columns">
 				<p><i class="fa fa-circle icon huge"></i></p>
 				<h4>The Solution</h4>
-				<p align="justify">Hang the lightbulb in the polypropylene and wrap it around a T-shaped top on the shade in order to hold everything together. Use red, fabric cord to display the connection point.</p>
+				<p align="justify">{{ page.solution }}</p>
 			</div>
-
-
 		</div>
 	</section>
 
-
-
+	{{ content }}
 
 	<!-- More images -->
 	<section class="project-page-images">
 		<div class="row margin">
-
 
 			<!-- Image 1 -->
 			<div class="three columns medium-six columns small-twelve columns image-thumb">
@@ -176,14 +153,12 @@
 				</a>
 			</div>
 
-
 			<!-- Image 2 -->
 			<div class="three columns medium-six columns small-twelve columns image-thumb">
 				<a class="popup" href="images/Lamp-4.jpg">
 					<img src="images/Lamp-4.jpg" alt="placeholder-thumbnail">
 				</a>
 			</div>
-
 
 			<!-- Image 3 -->
 			<div class="three columns medium-six columns small-twelve columns image-thumb">
@@ -192,38 +167,24 @@
 				</a>
 			</div>
 
-
 			<!-- Image 4 -->
 			<div class="three columns medium-six columns small-twelve columns image-thumb">
 				<a class="popup" href="images/Lamp-6.jpg">
 					<img src="images/Lamp-6.jpg" alt="placeholder-thumbnail">
 				</a>
 			</div>
-
-
 		</div>
 	</section>	
-
-
-
 
 	<!-- The footer -->
 	<section class="footer-two">
 		<div class="row">
 			<div class="twelve columns">
-
-
-
 				<!-- Credits -->
 				<p class="text-light">Nick Holland &copy; 2015</p>
-
-
 			</div>
 		</div>
 	</section>
-
-
-
 
 	<!-- Javascript -->
 	<script src="js/lib/jquery.min.js"></script>
@@ -234,7 +195,6 @@
 
 	<!-- Basic functions -->
 	<script src="js/main.js"></script>
-
 
 </body>
 </html>

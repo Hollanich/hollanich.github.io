@@ -1,0 +1,16 @@
+---
+layout: default
+title: Polypropylene Lamp
+slide1-image: images/Lamp-1.jpg
+slide2-image: images/Lamp-2.jpg
+slide3-image: images/Lamp-3.jpg
+slide1-text: Polypropylene Lamp
+slide2-text: 
+slide3-text: 
+intro: Designed with shadow, light quality and manufacturing feasibility in mind, this lighting unit allows for flatpacking and simple, non-obtrusive hanging.
+brief: Design a lighting unit using only one sheet of polypropylene plastic, cord, socket and lightbulb. All wiring needed to be done by hand.
+idea: To use the cord as a structural element, connecting the entire system. Use the body of the shade mixed with offcuts from the plastic sheeting as packaging.
+solution: Hang the lightbulb in the polypropylene and wrap it around a T-shaped top on the shade in order to hold everything together. Use red, fabric cord to display the connection point.
+---
+
+Some additional text
