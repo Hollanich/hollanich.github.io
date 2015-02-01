@@ -10,7 +10,7 @@
 	<script src="js/lib/modernizr.js"></script>
 	
 	<!-- The title of your site -->
-	<title>404 - Page not found</title>
+	<title>{{ page.title }}</title>
 	
 	<!-- Let's not index this page -->
 	<meta name="robots" content="noindex, nofollow">
@@ -42,8 +42,7 @@
 		<div class="fourofour-content text-white">
 
 			<h1 class="text-white">404</h1>
-			<h4 class="big serif italic margin-bottom">Oops! I couldn't find that one.<br>
-			Click the button below to go back home.</h4>
+			<h4 class="big serif italic margin-bottom">{{ content }}</h4>
 
 			<a href="index.html">
 				<i class="fa fa-home"></i>
