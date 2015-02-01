@@ -185,7 +185,7 @@ layout: nil
 		<div class="row">
 			<div class="ten columns center">
 				<h2 class="text-color">Details About The Pure Nylon Artbrush</h2>
-				<p class="big thin">The Pure Nylon Artbrush is a new standard of paintbrush. It's design has been simplified down to one component&#8212;the bristle. The function driven form of this brush presents smooth line transitions alongside tiny surface imperfections. This creates an odd, but pleasing balance of continuity and organic uncertainty.</p>
+				<p class="big thin">{{ site.posts.first.intro }}</p>
 			</div>
 		</div>
 
@@ -195,21 +195,21 @@ layout: nil
 			<div class="four columns">
 				<p><i class="fa fa-circle-o icon huge"></i></p>
 				<h4>The Brief</h4>
-				<p align="justify">The Pure Nylon Artbrush was designed by Nick Holland in response to MUJI's 4th international design competition, which focused on "long lasting design for living." The brief asks designers to build a product that will last for 10, 50, maybe even a hundred years into the future.</p>
+				<p align="justify">{{ site.posts.first.brief }}</p>
 			</div>
 
 			<!-- Column 2 -->
 			<div class="four columns">
 				<p><i class="fa fa-adjust icon huge"></i></p>
 				<h4>The Idea</h4>
-				<p align="justify">Remake the artbrush from the ground up by keeping only the parts that are necessary and stripping everything else away. By maximizing the efficiency of the artbrush, a new standard will be created, outlasting and out-performing the previous market standard of artbrushes.</p>
+				<p align="justify">{{ site.posts.first.idea }}</p>
 			</div>
 
 			<!-- Column 3 -->
 			<div class="four columns">
 				<p><i class="fa fa-circle icon huge"></i></p>
 				<h4>The Solution</h4>
-				<p align="justify">An artbrush made entirely out of bristle. Nylon bristle that is. The 'Pure Nylon Artbrush' starts with a cylinder of raw nylon threads and is then melted at its core to produce the shaft part of the brush. The end bristle is simply left unmelted.</p>
+				<p align="justify">{{ site.posts.first.solution }}</p>
 			</div>
 		</div>
 	</section>
@@ -227,39 +227,17 @@ layout: nil
 		
 		<!-- Thumbnails -->
 		<div class="row margin equal">
-
-			<!-- Portfolio thumb 1 -->
+			{% for post in site.posts reversed %}
 			<div class="four columns medium-six columns small-twelve columns fade-it">
 				<div class="portfolio-thumb">
-					<a href="/toothbrush">
-						<img src="images/Toothbrush.jpg" alt="placeholder-thumbnail">
+					<a href="{{ site.baseurl }}{{ post.url }}">
+						<img src="{{ post.product-image }}" alt="placeholder-thumbnail">
 						<i class="fa fa-plus-square-o"></i>
-						<b>Injection Molded Toothbrush</b>
+						<b>{{ post.title }}</b>
 					</a>
 				</div>
 			</div>
-
-			<!-- Portfolio thumb 2 -->
-			<div class="four columns medium-six columns small-twelve columns fade-it">
-				<div class="portfolio-thumb">
-					<a href="/cardboard_chair">
-						<img src="images/Chair.jpg" alt="placeholder-thumbnail">
-						<i class="fa fa-plus-square-o"></i>
-						<b>Flatpack Cardboard Chair</b>
-					</a>
-				</div>
-			</div>
-
-			<!-- Portfolio thumb 3 -->
-			<div class="four columns medium-six columns small-twelve columns fade-it">
-				<div class="portfolio-thumb">
-					<a href="/lamp">
-						<img src="images/Lamp.jpg" alt="placeholder-thumbnail">
-						<i class="fa fa-plus-square-o"></i>
-						<b>Polypropylene Lamp</b>
-					</a>
-				</div>
-			</div>
+			{% endfor %}
 		</div>
 	</section>
 
