@@ -7,7 +7,7 @@
 <!--[if !IE]><html lang="en"><![endif]-->
 <head>
 	<meta charset="utf-8">
-	<script src="js/lib/modernizr.js"></script>
+	<script src="{{ site.baseurl }}/js/lib/modernizr.js"></script>
 	
 	<!-- The title of your site -->
 	<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
@@ -22,17 +22,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	
 	<!-- Essential stylesheets -->
-	<link rel="stylesheet" href="css/lib/essentials.css">
-	<link rel="stylesheet" href="css/lib/font-awesome.min.css">
-	<link rel="stylesheet" href="css/lib/magnific-popup.css">
-	<link rel="stylesheet" href="css/lib/jquery.bxslider.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/lib/essentials.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/lib/font-awesome.min.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/lib/magnific-popup.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/lib/jquery.bxslider.css">
 	
 	<!-- Main stylesheet -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/colors/green.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/colors/green.css">
 	
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="shortcut icon" href="{{ site.baseurl }}/images/favicon.png">
 	
 	<!--[if lt IE 9]>
 		<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -56,10 +56,10 @@
 
 			<!-- The menu items -->
 			<ul class="menu">
-				<li><a href="index.html#home">Home</a></li>
-				<li><a href="index.html#work">Products</a></li>
-				<li><a href="index.html#about">About</a></li>
-				<li><a href="index.html#contact">Contact</a></li>
+				<li><a href="{{ site.baseurl }}/index.html#home">Home</a></li>
+				<li><a href="{{ site.baseurl }}/index.html#work">Products</a></li>
+				<li><a href="{{ site.baseurl }}/index.html#about">About</a></li>
+				<li><a href="{{ site.baseurl }}/index.html#contact">Contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -148,28 +148,28 @@
 			<!-- Image 1 -->
 			<div class="three columns medium-six columns small-twelve columns image-thumb">
 				<a class="popup" href="{{ page.image1 }}">
-					<img src="images/Lamp.jpg" alt="placeholder-thumbnail">
+					<img src="{{ page.image1 }}" alt="placeholder-thumbnail">
 				</a>
 			</div>
 
 			<!-- Image 2 -->
 			<div class="three columns medium-six columns small-twelve columns image-thumb">
 				<a class="popup" href="{{ page.image2 }}">
-					<img src="images/Lamp-4.jpg" alt="placeholder-thumbnail">
+					<img src="{{ page.image2 }}" alt="placeholder-thumbnail">
 				</a>
 			</div>
 
 			<!-- Image 3 -->
 			<div class="three columns medium-six columns small-twelve columns image-thumb">
 				<a class="popup" href="{{ page.image3 }}">
-					<img src="images/Lamp-5.jpg" alt="placeholder-thumbnail">
+					<img src="{{ page.image3 }}" alt="placeholder-thumbnail">
 				</a>
 			</div>
 
 			<!-- Image 4 -->
 			<div class="three columns medium-six columns small-twelve columns image-thumb">
 				<a class="popup" href="{{ page.image4 }}">
-					<img src="images/Lamp-6.jpg" alt="placeholder-thumbnail">
+					<img src="{{ page.image3 }}" alt="placeholder-thumbnail">
 				</a>
 			</div>
 		</div>
@@ -186,14 +186,14 @@
 	</section>
 
 	<!-- Javascript -->
-	<script src="js/lib/jquery.min.js"></script>
-	<script src="js/lib/jquery.fittext.js"></script>
-	<script src="js/lib/jquery.magnific-popup.min.js"></script>
-	<script src="js/lib/jquery.bxslider.min.js"></script>
-	<script src="js/lib/jquery.equal.js"></script>
+	<script src="{{ site.baseurl }}/js/lib/jquery.min.js"></script>
+	<script src="{{ site.baseurl }}/js/lib/jquery.fittext.js"></script>
+	<script src="{{ site.baseurl }}/js/lib/jquery.magnific-popup.min.js"></script>
+	<script src="{{ site.baseurl }}/js/lib/jquery.bxslider.min.js"></script>
+	<script src="{{ site.baseurl }}/js/lib/jquery.equal.js"></script>
 
 	<!-- Basic functions -->
-	<script src="js/main.js"></script>
+	<script src="{{ site.baseurl }}/js/main.js"></script>
 
 </body>
 </html>
