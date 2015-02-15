@@ -72,14 +72,12 @@ layout: nil
 						<b>About</b>
 					</a>
 				</li>
-				<!--
 				<li>
 					<a href="#contact" class="smoothscroll">
 						<i class="fa fa-envelope"></i>
 						<b>Contact</b>
 					</a>
 				</li>
-				-->
 			</ul>
 		</div>
 	</div>
@@ -291,7 +289,6 @@ layout: nil
 	</section>
 
 	<!-- Contact -->
-	<!-- The contactform 
 	<section id="contact" class="contact">
 		<div class="row">
 			<div class="ten columns center">
@@ -308,7 +305,7 @@ layout: nil
 		</div>
 		<div class="row">
 
-			<form method="post" action="contact.php" name="contactform" id="contactform">
+			<form action="//formspree.io/n.holland1@gmail.com" name="contactform" id="contactform">
 				<fieldset>
 					<div class="six columns">
 						<label for="name" accesskey="U"><i class="fa fa-user"></i></label>
@@ -316,28 +313,22 @@ layout: nil
 
 						<label for="email" accesskey="E"><i class="fa fa-envelope-o"></i></label>
 						<input name="email" type="text" id="email" size="30" value="" />
-
-						<label for="phone" accesskey="P"><i class="fa fa-phone"></i></label>
-						<input name="phone" type="text" id="phone" size="30" value="" />
+						
+						<input type="hidden" name="_subject" value="Contact from Nick-Holland.com" />
+						
+						<input type="text" name="_gotcha" style="display:none" />
 					</div>
 					<div class="six columns">
 						<label for="comments" accesskey="C"><i class="fa fa-comment"></i></label>
 						<textarea name="comments" id="comments"></textarea>
-
-						<label for="verify" accesskey="V">3 + 1 =</label>
-						<input name="verify" type="text" id="verify" size="4" value="" class="input-verify" />
-
 					</div>
 					<div class="twelve columns">
-
 						<input type="submit" class="submit" id="submit" value="Send message" />
-
 					</div>
 				</fieldset>
 			</form>
 		</div>
 	</section>
--->
 
 	<!-- Credits and bottom -->
 	<section class="credits transparant">
