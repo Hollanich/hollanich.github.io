@@ -164,9 +164,9 @@ $(function(){
 		$('#message').slideUp(300,function() {
 		$('#message').hide();
 
- 		$('#submit')
-			.after('<img src="images/status.gif" class="loader">')
-			.attr('disabled','disabled');
+// 		$('#submit')
+//			.after('<img src="images/status.gif" class="loader">')
+//			.attr('disabled','disabled');
 
 		$.post(action, {
 			name: $('#name').val(),
