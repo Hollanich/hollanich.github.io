@@ -58,27 +58,6 @@ $(document).ready(function() { "use strict";
  * Typed jQurey
 ***************************************/
 
-  $(function(){ "use strict";
-  $(".element-border, .hello-element").typed({
-    strings: ["Hello.", "Hej Hej.", "Ciao!"],
-        typeSpeed: 30, // typing speed
-        backDelay: 500, // pause before backspacing
-        loop: true, // loop on or off (true or false)
-        loopCount: false, // number of loops, false = infinite
-      });
-	  return false;
-});
-
-   $(function(){ "use strict";
-        $(".element, .element-border").typed({
-          strings: ["awesome", "inspired", "incredible", "classy", "great", "proffesional", "popular"],
-          typeSpeed: 250, // typing speed
-          backDelay: 500, // pause before backspacing
-          loop: false, // loop on or off (true or false)
-          loopCount: false, // number of loops, false = infinite
-        });
-		return false;
-    });
 	
 /**************************************
  * Hamburger Icon
