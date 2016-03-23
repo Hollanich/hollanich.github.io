@@ -282,7 +282,7 @@ a {
   max-height: 450px;
   padding-top: 120px;
   padding-bottom: 100px;
-  background-color: #000000;
+  background-color: #ff8686;
 }
 
 .section-imp.parallax.img {
@@ -473,7 +473,7 @@ a {
   overflow-y: hidden;
   padding: 13px 21px 10px;
   float: left;
-  background-color: #ff8686;
+  background-color: #000000;
   font-size: 16px;
   text-align: center;
   cursor: pointer;
